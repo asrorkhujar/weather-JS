@@ -43,8 +43,6 @@ const getWeather = async function (city) {
     evt.preventDefault();
     let inputVal = elInput.value;
     getWeather(inputVal);
-    elInput.value.innerHTML = ''
-
   });
 
 
