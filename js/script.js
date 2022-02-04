@@ -1,6 +1,6 @@
 const elForm = document.querySelector(".top-banner form");
 const elInput = document.querySelector(".top-banner input");
-const countriesContainer = document.querySelector('.waether-resault .cities');
+const countriesContainer = document.querySelector(".waether-resault .cities");
 
 const apiKey = "f3dca072eb060ca2b0c978bdf2077248";
 
@@ -20,12 +20,12 @@ const renderWeather = function (data) {
   </figure>
   </li>
   `;
-  countriesContainer.insertAdjacentHTML('beforeend', html);
-  elInput.value = '';
+  countriesContainer.insertAdjacentHTML("beforeend", html);
+  elInput.value = "";
 };
 
 const renderError = function (errMessage) {
-  countriesContainer.insertAdjacentText('beforeend', errMessage);
+  countriesContainer.insertAdjacentText("beforeend", errMessage);
 };
 
 const getWeather = async function (city) {
