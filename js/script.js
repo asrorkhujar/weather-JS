@@ -21,6 +21,7 @@ const renderWeather = function (data) {
   </li>
   `;
   countriesContainer.insertAdjacentHTML('beforeend', html);
+  elInput.value = '';
 };
 
 const renderError = function (errMessage) {
